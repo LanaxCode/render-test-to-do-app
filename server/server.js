@@ -6,7 +6,7 @@ const app = express()
 const PORT = process.env.Port || 3001;
 
 app.use(express.json())
-// app.use(cors())
+// app.use(cors()) auskommentieren brauchen wir nicht für deployment
 
 app.use((express.static("../front-end/build")))
 
